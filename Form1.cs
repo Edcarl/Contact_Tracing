@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing
 {
-    public partial class Form1 : Form
+    public partial class LogForm : Form
     {
-        public Form1()
+        public LogForm()
         {
             InitializeComponent();
+        }
+
+        private void LogForm_Load(object sender, EventArgs e)
+        {
+            DateTimelbl.Text = DateTime.Now.ToString();
         }
     }
 }

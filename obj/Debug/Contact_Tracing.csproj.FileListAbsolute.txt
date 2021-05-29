@@ -1,0 +1,10 @@
+C:\Users\ADMIN\source\repos\Contact_Tracing\bin\Debug\Contact_Tracing.exe.config
+C:\Users\ADMIN\source\repos\Contact_Tracing\bin\Debug\Contact_Tracing.exe
+C:\Users\ADMIN\source\repos\Contact_Tracing\bin\Debug\Contact_Tracing.pdb
+C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.csprojAssemblyReference.cache
+C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.LogForm.resources
+C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.Properties.Resources.resources
+C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.csproj.GenerateResource.cache
+C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.exe
+C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.pdb
