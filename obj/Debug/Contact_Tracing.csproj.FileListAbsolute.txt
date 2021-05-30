@@ -8,3 +8,4 @@ C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.csproj.Gen
 C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.exe
 C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.pdb
+C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.Admin.resources
