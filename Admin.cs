@@ -16,5 +16,41 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Admin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Exitbtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Loginbtn_Click(object sender, EventArgs e)
+        {
+            if(UserBox.Text == "admin" && Passbox.Text == "password")
+            {
+                InformationList InfoList = new InformationList();
+                InfoList.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Wrong Username/Password!");
+                UserBox.Text = "";
+                Passbox.Text = "";
+            }
+        }
     }
 }

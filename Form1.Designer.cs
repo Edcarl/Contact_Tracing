@@ -64,6 +64,7 @@ namespace Contact_Tracing
             this.NumberBox.Name = "NumberBox";
             this.NumberBox.Size = new System.Drawing.Size(207, 32);
             this.NumberBox.TabIndex = 1;
+            this.NumberBox.TextChanged += new System.EventHandler(this.NumberBox_TextChanged);
             // 
             // AgeBox
             // 
@@ -157,6 +158,7 @@ namespace Contact_Tracing
             this.btnAdmin.TabIndex = 12;
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // NameInslbl
             // 
