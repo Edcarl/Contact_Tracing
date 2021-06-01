@@ -52,5 +52,12 @@ namespace Contact_Tracing
                 Passbox.Text = "";
             }
         }
+
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+            LogForm newLog = new LogForm();
+            newLog.Show();
+            this.Hide();
+        }
     }
 }

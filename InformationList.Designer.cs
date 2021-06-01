@@ -32,7 +32,6 @@ namespace Contact_Tracing
             this.InfoBox = new System.Windows.Forms.RichTextBox();
             this.Searchbtn = new System.Windows.Forms.Button();
             this.SearchBox = new System.Windows.Forms.TextBox();
-            this.Searchlbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // InfoBox
@@ -60,25 +59,18 @@ namespace Contact_Tracing
             this.SearchBox.Size = new System.Drawing.Size(365, 20);
             this.SearchBox.TabIndex = 2;
             // 
-            // Searchlbl
-            // 
-            this.Searchlbl.AutoSize = true;
-            this.Searchlbl.Location = new System.Drawing.Point(125, 50);
-            this.Searchlbl.Name = "Searchlbl";
-            this.Searchlbl.Size = new System.Drawing.Size(41, 13);
-            this.Searchlbl.TabIndex = 3;
-            this.Searchlbl.Text = "Search";
-            // 
             // InformationList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Contact_Tracing.Properties.Resources.grbg;
             this.ClientSize = new System.Drawing.Size(800, 579);
-            this.Controls.Add(this.Searchlbl);
             this.Controls.Add(this.SearchBox);
             this.Controls.Add(this.Searchbtn);
             this.Controls.Add(this.InfoBox);
+            this.MaximizeBox = false;
             this.Name = "InformationList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InformationList";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -90,6 +82,5 @@ namespace Contact_Tracing
         private System.Windows.Forms.RichTextBox InfoBox;
         private System.Windows.Forms.Button Searchbtn;
         private System.Windows.Forms.TextBox SearchBox;
-        private System.Windows.Forms.Label Searchlbl;
     }
 }

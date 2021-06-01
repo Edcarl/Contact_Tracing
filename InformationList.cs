@@ -29,6 +29,7 @@ namespace Contact_Tracing
                 filename = filename.Replace(".txt", "");
                 date = filename;
             }
+
             StreamReader inputFile;
                 inputFile = File.OpenText("Contact_Tracing-" + date + ".txt");
                 InfoBox.Text = inputFile.ReadToEnd();

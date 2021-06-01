@@ -30,6 +30,7 @@ namespace Contact_Tracing
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogForm));
             this.NameBox = new System.Windows.Forms.TextBox();
             this.NumberBox = new System.Windows.Forms.TextBox();
             this.AgeBox = new System.Windows.Forms.TextBox();
@@ -45,11 +46,12 @@ namespace Contact_Tracing
             this.NameInslbl = new System.Windows.Forms.Label();
             this.DateTimelbl = new System.Windows.Forms.Label();
             this.TimerDT = new System.Windows.Forms.Timer(this.components);
+            this.CTFormlbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // NameBox
             // 
-            this.NameBox.Font = new System.Drawing.Font("Javanese Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameBox.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameBox.Location = new System.Drawing.Point(63, 50);
             this.NameBox.Multiline = true;
             this.NameBox.Name = "NameBox";
@@ -58,7 +60,7 @@ namespace Contact_Tracing
             // 
             // NumberBox
             // 
-            this.NumberBox.Font = new System.Drawing.Font("Javanese Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumberBox.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NumberBox.Location = new System.Drawing.Point(200, 121);
             this.NumberBox.Multiline = true;
             this.NumberBox.Name = "NumberBox";
@@ -78,50 +80,57 @@ namespace Contact_Tracing
             // Namelbl
             // 
             this.Namelbl.AutoSize = true;
-            this.Namelbl.Location = new System.Drawing.Point(12, 56);
+            this.Namelbl.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Namelbl.Location = new System.Drawing.Point(13, 56);
             this.Namelbl.Name = "Namelbl";
-            this.Namelbl.Size = new System.Drawing.Size(38, 13);
+            this.Namelbl.Size = new System.Drawing.Size(47, 17);
             this.Namelbl.TabIndex = 4;
             this.Namelbl.Text = "Name:";
             // 
             // Numberlbl
             // 
             this.Numberlbl.AutoSize = true;
-            this.Numberlbl.Location = new System.Drawing.Point(106, 127);
+            this.Numberlbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Numberlbl.Location = new System.Drawing.Point(103, 127);
             this.Numberlbl.Name = "Numberlbl";
-            this.Numberlbl.Size = new System.Drawing.Size(87, 13);
+            this.Numberlbl.Size = new System.Drawing.Size(97, 15);
             this.Numberlbl.TabIndex = 5;
             this.Numberlbl.Text = "Contact Number:";
             // 
             // Addresslbl
             // 
             this.Addresslbl.AutoSize = true;
-            this.Addresslbl.Location = new System.Drawing.Point(12, 202);
+            this.Addresslbl.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Addresslbl.Location = new System.Drawing.Point(5, 202);
             this.Addresslbl.Name = "Addresslbl";
-            this.Addresslbl.Size = new System.Drawing.Size(48, 13);
+            this.Addresslbl.Size = new System.Drawing.Size(60, 17);
             this.Addresslbl.TabIndex = 6;
             this.Addresslbl.Text = "Address:";
             // 
             // Agelbl
             // 
             this.Agelbl.AutoSize = true;
-            this.Agelbl.Location = new System.Drawing.Point(12, 127);
+            this.Agelbl.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Agelbl.Location = new System.Drawing.Point(13, 127);
             this.Agelbl.Name = "Agelbl";
-            this.Agelbl.Size = new System.Drawing.Size(29, 13);
+            this.Agelbl.Size = new System.Drawing.Size(36, 17);
             this.Agelbl.TabIndex = 7;
             this.Agelbl.Text = "Age:";
             // 
             // addressBox
             // 
-            this.addressBox.Font = new System.Drawing.Font("Javanese Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressBox.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addressBox.Location = new System.Drawing.Point(63, 202);
             this.addressBox.Name = "addressBox";
-            this.addressBox.Size = new System.Drawing.Size(344, 50);
+            this.addressBox.Size = new System.Drawing.Size(344, 62);
             this.addressBox.TabIndex = 8;
             this.addressBox.Text = "";
             // 
             // btnSave
             // 
+            this.btnSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSave.BackgroundImage")));
+            this.btnSave.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSave.Location = new System.Drawing.Point(63, 316);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(127, 54);
@@ -132,6 +141,9 @@ namespace Contact_Tracing
             // 
             // btnClear
             // 
+            this.btnClear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClear.BackgroundImage")));
+            this.btnClear.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnClear.Location = new System.Drawing.Point(63, 376);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(127, 54);
@@ -142,6 +154,9 @@ namespace Contact_Tracing
             // 
             // btnExit
             // 
+            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
+            this.btnExit.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnExit.Location = new System.Drawing.Point(242, 376);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(127, 54);
@@ -152,6 +167,9 @@ namespace Contact_Tracing
             // 
             // btnAdmin
             // 
+            this.btnAdmin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdmin.BackgroundImage")));
+            this.btnAdmin.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAdmin.Location = new System.Drawing.Point(242, 316);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(127, 54);
@@ -163,9 +181,10 @@ namespace Contact_Tracing
             // NameInslbl
             // 
             this.NameInslbl.AutoSize = true;
-            this.NameInslbl.Location = new System.Drawing.Point(157, 85);
+            this.NameInslbl.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameInslbl.Location = new System.Drawing.Point(134, 85);
             this.NameInslbl.Name = "NameInslbl";
-            this.NameInslbl.Size = new System.Drawing.Size(138, 13);
+            this.NameInslbl.Size = new System.Drawing.Size(176, 17);
             this.NameInslbl.TabIndex = 13;
             this.NameInslbl.Text = "(Surname, Given Name, MI)";
             // 
@@ -184,11 +203,23 @@ namespace Contact_Tracing
             this.TimerDT.Interval = 1000;
             this.TimerDT.Tick += new System.EventHandler(this.timer_tick);
             // 
+            // CTFormlbl
+            // 
+            this.CTFormlbl.AutoSize = true;
+            this.CTFormlbl.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTFormlbl.Location = new System.Drawing.Point(125, 9);
+            this.CTFormlbl.Name = "CTFormlbl";
+            this.CTFormlbl.Size = new System.Drawing.Size(193, 23);
+            this.CTFormlbl.TabIndex = 15;
+            this.CTFormlbl.Text = "Contact Tracing Form";
+            // 
             // LogForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Contact_Tracing.Properties.Resources.grbg;
             this.ClientSize = new System.Drawing.Size(430, 488);
+            this.Controls.Add(this.CTFormlbl);
             this.Controls.Add(this.DateTimelbl);
             this.Controls.Add(this.NameInslbl);
             this.Controls.Add(this.btnAdmin);
@@ -203,7 +234,9 @@ namespace Contact_Tracing
             this.Controls.Add(this.AgeBox);
             this.Controls.Add(this.NumberBox);
             this.Controls.Add(this.NameBox);
+            this.MaximizeBox = false;
             this.Name = "LogForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log Form";
             this.Load += new System.EventHandler(this.LogForm_Load);
             this.ResumeLayout(false);
@@ -228,6 +261,7 @@ namespace Contact_Tracing
         private System.Windows.Forms.Label NameInslbl;
         private System.Windows.Forms.Label DateTimelbl;
         private System.Windows.Forms.Timer TimerDT;
+        private System.Windows.Forms.Label CTFormlbl;
     }
 }
 

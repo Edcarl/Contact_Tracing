@@ -41,6 +41,7 @@ namespace Contact_Tracing
             outputFile.WriteLine(DateofVisit);
             outputFile.WriteLine("=====================================");
             outputFile.Close();
+            MessageBox.Show("Saved!");
         }
 
         private void btnClear_Click(object sender, EventArgs e)
