@@ -37,6 +37,7 @@ namespace Contact_Tracing
             this.Loginbtn = new System.Windows.Forms.Button();
             this.Exitbtn = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
+            this.Adminlbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // UserBox
@@ -121,12 +122,25 @@ namespace Contact_Tracing
             this.Cancel.UseVisualStyleBackColor = true;
             this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
+            // Adminlbl
+            // 
+            this.Adminlbl.AutoSize = true;
+            this.Adminlbl.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Adminlbl.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Adminlbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Adminlbl.Location = new System.Drawing.Point(91, 34);
+            this.Adminlbl.Name = "Adminlbl";
+            this.Adminlbl.Size = new System.Drawing.Size(253, 23);
+            this.Adminlbl.TabIndex = 7;
+            this.Adminlbl.Text = "ADMINISTRATOR\'S FORM";
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources.grbg;
             this.ClientSize = new System.Drawing.Size(430, 488);
+            this.Controls.Add(this.Adminlbl);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Exitbtn);
             this.Controls.Add(this.Loginbtn);
@@ -153,5 +167,6 @@ namespace Contact_Tracing
         private System.Windows.Forms.Button Loginbtn;
         private System.Windows.Forms.Button Exitbtn;
         private System.Windows.Forms.Button Cancel;
+        private System.Windows.Forms.Label Adminlbl;
     }
 }

@@ -32,6 +32,7 @@ namespace Contact_Tracing
             this.InfoBox = new System.Windows.Forms.RichTextBox();
             this.Searchbtn = new System.Windows.Forms.Button();
             this.SearchBox = new System.Windows.Forms.TextBox();
+            this.LogOutbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // InfoBox
@@ -59,12 +60,23 @@ namespace Contact_Tracing
             this.SearchBox.Size = new System.Drawing.Size(365, 20);
             this.SearchBox.TabIndex = 2;
             // 
+            // LogOutbtn
+            // 
+            this.LogOutbtn.Location = new System.Drawing.Point(713, 12);
+            this.LogOutbtn.Name = "LogOutbtn";
+            this.LogOutbtn.Size = new System.Drawing.Size(75, 23);
+            this.LogOutbtn.TabIndex = 3;
+            this.LogOutbtn.Text = "Log Out";
+            this.LogOutbtn.UseVisualStyleBackColor = true;
+            this.LogOutbtn.Click += new System.EventHandler(this.LogOutbtn_Click);
+            // 
             // InformationList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources.grbg;
             this.ClientSize = new System.Drawing.Size(800, 579);
+            this.Controls.Add(this.LogOutbtn);
             this.Controls.Add(this.SearchBox);
             this.Controls.Add(this.Searchbtn);
             this.Controls.Add(this.InfoBox);
@@ -82,5 +94,6 @@ namespace Contact_Tracing
         private System.Windows.Forms.RichTextBox InfoBox;
         private System.Windows.Forms.Button Searchbtn;
         private System.Windows.Forms.TextBox SearchBox;
+        private System.Windows.Forms.Button LogOutbtn;
     }
 }

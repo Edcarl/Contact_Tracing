@@ -21,19 +21,38 @@ namespace Contact_Tracing
         private void Searchbtn_Click(object sender, EventArgs e)
         {
             String[] file = Directory.GetFiles(".", "Contact_Tracing-*");
+            int i = 0;
             string date = "";
-            for (int i = 0; i < file.Length; i++)
+            while (i<file.Length)
             {
                 string filename = file[i];
                 filename = filename.Replace(".\\Contact_Tracing-", "");
                 filename = filename.Replace(".txt", "");
-                date = filename;
+                i++;
+                if (SearchBox.Text == filename)
+                {
+                    date = filename;
+                }
             }
+            ////for (int i = 0; i < file.Length; i++)
+            ////{
+            ////    string filename = file[i];
+            ////    filename = filename.Replace(".\\Contact_Tracing-", "");
+            ////    filename = filename.Replace(".txt", "");
+            ////    date = filename;
+            ////}
 
             StreamReader inputFile;
                 inputFile = File.OpenText("Contact_Tracing-" + date + ".txt");
                 InfoBox.Text = inputFile.ReadToEnd();
                 inputFile.Close();
+        }
+
+        private void LogOutbtn_Click(object sender, EventArgs e)
+        {
+            Admin newadmin = new Admin();
+            newadmin.Show();
+            this.Hide();
         }
     }
 }

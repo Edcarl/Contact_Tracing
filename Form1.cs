@@ -32,7 +32,7 @@ namespace Contact_Tracing
         {
             StreamWriter outputFile;
             String DateofVisit = DateTime.Now.ToString();
-            String Date = DateTime.Now.ToLongDateString();
+            String Date = DateTime.Now.ToShortDateString().Replace("/", "-");
             outputFile = File.AppendText("Contact_Tracing-" + Date + ".txt");
             outputFile.WriteLine(Namelbl.Text + "" + NameBox.Text);
             outputFile.WriteLine(Agelbl.Text + "" + AgeBox.Text);
