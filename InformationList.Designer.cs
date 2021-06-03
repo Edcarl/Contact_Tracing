@@ -33,6 +33,7 @@ namespace Contact_Tracing
             this.Searchbtn = new System.Windows.Forms.Button();
             this.SearchBox = new System.Windows.Forms.TextBox();
             this.LogOutbtn = new System.Windows.Forms.Button();
+            this.Guidelbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // InfoBox
@@ -70,12 +71,22 @@ namespace Contact_Tracing
             this.LogOutbtn.UseVisualStyleBackColor = true;
             this.LogOutbtn.Click += new System.EventHandler(this.LogOutbtn_Click);
             // 
+            // Guidelbl
+            // 
+            this.Guidelbl.AutoSize = true;
+            this.Guidelbl.Location = new System.Drawing.Point(254, 70);
+            this.Guidelbl.Name = "Guidelbl";
+            this.Guidelbl.Size = new System.Drawing.Size(165, 13);
+            this.Guidelbl.TabIndex = 4;
+            this.Guidelbl.Text = "(Day-Month-Year Ex. 02-06-2021)";
+            // 
             // InformationList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing.Properties.Resources.grbg;
             this.ClientSize = new System.Drawing.Size(800, 579);
+            this.Controls.Add(this.Guidelbl);
             this.Controls.Add(this.LogOutbtn);
             this.Controls.Add(this.SearchBox);
             this.Controls.Add(this.Searchbtn);
@@ -95,5 +106,6 @@ namespace Contact_Tracing
         private System.Windows.Forms.Button Searchbtn;
         private System.Windows.Forms.TextBox SearchBox;
         private System.Windows.Forms.Button LogOutbtn;
+        private System.Windows.Forms.Label Guidelbl;
     }
 }

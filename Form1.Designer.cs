@@ -62,20 +62,24 @@ namespace Contact_Tracing
             // 
             this.NumberBox.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NumberBox.Location = new System.Drawing.Point(200, 121);
+            this.NumberBox.MaxLength = 11;
             this.NumberBox.Multiline = true;
             this.NumberBox.Name = "NumberBox";
             this.NumberBox.Size = new System.Drawing.Size(207, 32);
             this.NumberBox.TabIndex = 1;
             this.NumberBox.TextChanged += new System.EventHandler(this.NumberBox_TextChanged);
+            this.NumberBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumberBox_KeyPress);
             // 
             // AgeBox
             // 
             this.AgeBox.Font = new System.Drawing.Font("Javanese Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgeBox.Location = new System.Drawing.Point(63, 121);
+            this.AgeBox.MaxLength = 2;
             this.AgeBox.Multiline = true;
             this.AgeBox.Name = "AgeBox";
             this.AgeBox.Size = new System.Drawing.Size(37, 32);
             this.AgeBox.TabIndex = 3;
+            this.AgeBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AgeBox_KeyPress);
             // 
             // Namelbl
             // 

@@ -68,5 +68,15 @@ namespace Contact_Tracing
             adminForm.Show();
             this.Hide();
         }
+
+        private void NumberBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar);
+        }
+
+        private void AgeBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar);
+        }
     }
 }
