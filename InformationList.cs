@@ -36,9 +36,16 @@ namespace Contact_Tracing
             }
 
             StreamReader inputFile;
+            if (date != "")
+            {
                 inputFile = File.OpenText("Contact_Tracing-" + date + ".txt");
                 InfoBox.Text = inputFile.ReadToEnd();
                 inputFile.Close();
+            }
+            else
+            {
+                MessageBox.Show("Sorry there's no record for that day");
+            }
         }
 
         private void LogOutbtn_Click(object sender, EventArgs e)
