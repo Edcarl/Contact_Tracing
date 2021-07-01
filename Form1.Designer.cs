@@ -67,7 +67,6 @@ namespace Contact_Tracing
             this.NumberBox.Name = "NumberBox";
             this.NumberBox.Size = new System.Drawing.Size(207, 32);
             this.NumberBox.TabIndex = 1;
-            this.NumberBox.TextChanged += new System.EventHandler(this.NumberBox_TextChanged);
             this.NumberBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumberBox_KeyPress);
             // 
             // AgeBox

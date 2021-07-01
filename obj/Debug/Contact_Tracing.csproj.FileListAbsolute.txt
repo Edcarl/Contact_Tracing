@@ -10,3 +10,15 @@ C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.exe
 C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.pdb
 C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.Admin.resources
 C:\Users\ADMIN\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.InformationList.resources
+C:\Users\Edcarl\source\repos\Contact_Tracing\bin\Debug\Contact_Tracing.exe.config
+C:\Users\Edcarl\source\repos\Contact_Tracing\bin\Debug\Contact_Tracing.exe
+C:\Users\Edcarl\source\repos\Contact_Tracing\bin\Debug\Contact_Tracing.pdb
+C:\Users\Edcarl\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.csprojAssemblyReference.cache
+C:\Users\Edcarl\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.Admin.resources
+C:\Users\Edcarl\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.LogForm.resources
+C:\Users\Edcarl\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.InformationList.resources
+C:\Users\Edcarl\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.Properties.Resources.resources
+C:\Users\Edcarl\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.csproj.GenerateResource.cache
+C:\Users\Edcarl\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.csproj.CoreCompileInputs.cache
+C:\Users\Edcarl\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.exe
+C:\Users\Edcarl\source\repos\Contact_Tracing\obj\Debug\Contact_Tracing.pdb

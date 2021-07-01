@@ -77,9 +77,9 @@ namespace Contact_Tracing
             this.Guidelbl.AutoSize = true;
             this.Guidelbl.Location = new System.Drawing.Point(254, 70);
             this.Guidelbl.Name = "Guidelbl";
-            this.Guidelbl.Size = new System.Drawing.Size(165, 13);
+            this.Guidelbl.Size = new System.Drawing.Size(153, 13);
             this.Guidelbl.TabIndex = 4;
-            this.Guidelbl.Text = "(Day-Month-Year Ex. 02-06-2021)";
+            this.Guidelbl.Text = "(Month-Day-Year Ex. 7-1-2021)";
             // 
             // InfoListlbl
             // 

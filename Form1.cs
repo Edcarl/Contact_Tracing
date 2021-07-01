@@ -57,11 +57,6 @@ namespace Contact_Tracing
             Application.Exit();
         }
 
-        private void NumberBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             Admin adminForm = new Admin();
