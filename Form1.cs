@@ -18,10 +18,6 @@ namespace Contact_Tracing
             InitializeComponent();
         }
 
-        private void LogForm_Load(object sender, EventArgs e)
-        {
-               
-        }
 
         private void timer_tick(object sender, EventArgs e)
         {
